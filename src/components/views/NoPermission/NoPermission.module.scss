@@ -1,0 +1,8 @@
+@import '../../../styles/settings.scss';
+
+.root {
+  height: calc(100vh - 132px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

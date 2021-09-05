@@ -1,0 +1,32 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  padding-top: 10px;
+  position: fixed;
+  z-index: 9999;
+  background: #fff;
+  width: 100%;
+
+  .container {
+    display: flex;
+    justify-content: center;
+
+    .btn {
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      font-weight: bold;
+      margin: 15px;
+      cursor: pointer;
+
+      &:hover {
+        color: $colorGrey;
+      }
+
+      svg {
+        font-size: 30px;
+        margin-right: 5px;
+      }
+    }
+  }
+}

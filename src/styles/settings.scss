@@ -1,0 +1,31 @@
+@import "./normalize.scss";
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+
+$mainFont: "PT Sans", sans-serif;
+$logoFont: 'Zen Tokyo Zoo', cursive;
+$colorRed: rgb(214, 35, 35);
+$colorBlack: rgb(0, 0, 0);
+$colorGrey: rgb(61, 61, 61);
+$colorWhite: #fff;
+
+.slick-slider.slick-arrow{
+  .slick-prev{
+    left: 0 !important;
+  }
+  .slick-next{
+    right: 0;
+  }
+}
+body {
+  font-family: $mainFont;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.MuiDrawer-modal{
+  z-index: 9999999999 !important;
+}

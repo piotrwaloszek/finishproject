@@ -1,0 +1,63 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  width: 400px;
+  height: 600px;
+  flex: 1;
+  padding: 0 10px;
+
+  &:hover .textWrapper {
+    background: $colorGrey;
+    transition: all 1s;
+  }
+
+  .imageWrapper {
+    height: 500px;
+
+    img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .textWrapper {
+    height: 100px;
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h3{
+      font-size: 25px;
+    }
+
+    h3,
+    h5 {
+      text-align: center;
+      margin: 0;
+      padding: 5px 0;
+      font-weight: 100;
+    }
+
+    div {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        color: $colorWhite;
+        padding: 10px 15px;
+        border: 2px solid $colorWhite;
+
+        &:hover{
+          color: $colorGrey;
+          background: $colorWhite;
+        }
+      }
+    }
+  }
+}

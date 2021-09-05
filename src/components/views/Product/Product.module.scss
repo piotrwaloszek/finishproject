@@ -1,0 +1,172 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  min-height: calc(100vh - 132px);
+  padding-top: 160px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  .link {
+    position: absolute;
+    top: 100px;
+    left: 0;
+
+    a {
+      font-weight: bold;
+
+      &:hover {
+        color: $colorRed;
+      }
+    }
+
+    span {
+      color: $colorGrey;
+    }
+  }
+
+  .leftWrapper {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 50px;
+
+    .imageWrapper {
+      width: 100%;
+      height: 400px;
+
+      img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    button:first-of-type {
+      left: 10px;
+      z-index: 999;
+  
+      &:before {
+        content: "<";
+        font-size: 50px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-weight: bold;
+        color: $colorBlack;
+      }
+    }
+  
+    button:nth-of-type(2) {
+      right: 20px;
+  
+      &:before {
+        content: ">";
+        font-size: 50px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-weight: bold;
+        color: $colorBlack;
+      }
+    }
+  }
+
+  .rightWrapper {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .colors {
+      width: 160px;
+      height: 42px;
+      margin: 10px 0;
+      background: rgb(207, 207, 207);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50px;
+
+      .color {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        border-radius: 50%;
+        margin-left: 5px;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.7;
+        }
+
+        &.Blue {
+          background: rgb(30, 58, 117);
+        }
+
+        &.Black {
+          background: $colorBlack;
+        }
+
+        &.Red {
+          background: $colorRed;
+        }
+
+        &.White {
+          background: $colorWhite;
+        }
+      }
+      .checked {
+        border: 3px solid rgb(207, 207, 207);
+      }
+    }
+
+    .quantity {
+      display: inline-block;
+      width: 17%;
+      border: 1px solid $colorGrey;
+      padding: 0 5px;
+
+      div:before,
+      :after {
+        content: none;
+      }
+      label {
+        padding: 5px;
+      }
+    }
+
+    .btn {
+      border: 1px solid $colorBlack;
+      border-radius: 0;
+      margin-top: 10px;
+    }
+
+    .btn:nth-of-type(2) {
+      background: $colorBlack;
+      color: $colorWhite;
+
+      &:hover {
+        background: $colorGrey;
+      }
+    }
+
+    .dropdownBtn {
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      position: relative;
+
+      &::before {
+        content: "";
+        border-bottom: 1px solid $colorGrey;
+        width: 20px;
+        display: inline-block;
+        top: 50px;
+        position: absolute;
+        transition: all 1s;
+      }
+
+      &:hover::before {
+        width: 100%;
+        transition: all 1s;
+      }
+    }
+  }
+}

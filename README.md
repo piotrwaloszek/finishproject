@@ -1,4 +1,4 @@
-https://f1-shop.herokuapp.com/
+https://finishproject.herokuapp.com/
 
 
 # Getting Started with Create React App
